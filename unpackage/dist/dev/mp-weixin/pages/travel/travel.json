@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发表动态",
+  "usingComponents": {
+    "h-mmessages": "/components/HM-messages",
+    "cpn_modal": "/components/modal"
+  }
+}

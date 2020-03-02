@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "飞猪旅游",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "cpn_search": "/components/search",
+    "cpn_ticket": "/components/ticket",
+    "cpn_classify": "/components/classify",
+    "cpn_content": "/components/content",
+    "cpn_article": "/components/article",
+    "uni-load-more": "/uni-load-more/uni-load-more"
+  }
+}

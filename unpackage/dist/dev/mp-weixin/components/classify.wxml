@@ -1,0 +1,1 @@
+<view style="margin:0 20rpx;"><view class="conteng"><block wx:for="{{tables}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><view><text class="tick">{{item.tick}}</text><text class="nametext">{{item.nametext}}</text></view></block></block></view></view>
