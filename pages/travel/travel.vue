@@ -29,7 +29,7 @@
 			<view class="conteng">
 				<block v-for="(item,index) in topimg" :key="index">
 					<view class="conteng-img">
-						<view class="upload-img-mask" v-if="maskShow">
+						<view class="upload-img-mask">
 							<image :src="item" mode="aspectFill" class="upload-img" @click="preImage(index)"></image>
 						</view>
 						<image src="../../static/tab/deteimg.svg" mode="widthFix" class="deleteimg" @click="deleteImg(index)"></image>

@@ -41,15 +41,10 @@
       }
     ]
   },
-  "permission": {
-    "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
-    }
-  },
   "usingComponents": {
     "cpn_loading": "/components/loading",
     "cpn_nonedata": "/components/none",
     "cpn_-top-loaing": "/components/top_loading"
   },
-  "sitemapLocation": "sitemap13.json"
+  "sitemapLocation": "sitemap45.json"
 }
