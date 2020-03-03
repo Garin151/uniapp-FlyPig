@@ -154,6 +154,7 @@ export default {
 	created() {
 		let pageRoute = getCurrentPages()
 		let PageRoute = pageRoute[pageRoute.length - 2].route
+		console.log(PageRoute)
 		this.pageRouter = PageRoute
 	},
 	

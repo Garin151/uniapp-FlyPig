@@ -221,7 +221,7 @@ var _Located = __webpack_require__(/*! ../../common/Located.js */ 33);function _
 
 
 var until = __webpack_require__(/*! ../../common/until.js */ 72);
-var time = until.formatTime(new Date());
+//let time = until.formatTime(new Date())
 var db = wx.cloud.database();
 var SQL_UserData = db.collection("SQL-UserData");var _default =
 {
@@ -229,6 +229,8 @@ var SQL_UserData = db.collection("SQL-UserData");var _default =
   //生命周期函数
   created: function created() {
     this.addRess();
+    var citydata = this.address;
+    this.$store.commit("travelmuta", citydata);
   },
 
   onShow: function onShow() {
@@ -334,7 +336,7 @@ var SQL_UserData = db.collection("SQL-UserData");var _default =
         //console.log(res)
         _this3.address = res.result.ad_info.city;
       }).catch(function (err) {
-        console.log(err);
+        //console.log(err)
         _this3.address = "桂林市";
       });
     },
@@ -455,7 +457,7 @@ var SQL_UserData = db.collection("SQL-UserData");var _default =
         avatarUrl: this.avatarUrl,
         nickName: this.nickName,
         openid: this.openid,
-        creatTime: time };
+        creatTime: until.formatTime(new Date()) };
 
       SQL_UserData.add({
         data: datas }).

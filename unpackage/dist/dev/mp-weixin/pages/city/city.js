@@ -289,6 +289,7 @@ var qqmapsdk = new QQMapWX({ key: '2B5BZ-JH7CX-JFR4X-7FUUI-5QGFF-CUFV7' });var _
   created: function created() {
     var pageRoute = getCurrentPages();
     var PageRoute = pageRoute[pageRoute.length - 2].route;
+    console.log(PageRoute);
     this.pageRouter = PageRoute;
   },
 

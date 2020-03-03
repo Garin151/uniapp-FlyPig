@@ -81,7 +81,7 @@ import {addressData} from "../../common/Located.js"
 import {HMmessages} from "../../components/HM-messages.vue"
 import {cpn_modal} from "../../components/modal.vue"
 let until = require("../../common/until.js")
-let time = until.formatTime(new Date())
+//let time = until.formatTime(new Date())
 let db = wx.cloud.database()
 let SQL_UserData = db.collection("SQL-UserData")
 export default {
@@ -89,6 +89,8 @@ export default {
 	//生命周期函数
 	created() {
 		this.addRess()
+		let citydata = this.address
+		this.$store.commit("travelmuta",citydata)
 	},
 	
 	onShow() {
@@ -194,7 +196,7 @@ export default {
 				//console.log(res)
 				this.address = res.result.ad_info.city
 			}).catch(err =>{
-				console.log(err)
+				//console.log(err)
 				this.address = "桂林市"
 			})
 		},
@@ -315,7 +317,7 @@ export default {
 				avatarUrl:this.avatarUrl,
 				nickName:this.nickName,
 				openid:this.openid,
-				creatTime:time
+				creatTime:until.formatTime(new Date())
 			}
 			SQL_UserData.add({
 				data:datas
