@@ -53,9 +53,9 @@
 		<!-- 定位 -->
 		<view class="address">
 			<view class="address-text">你在哪里</view>
-			<view class="address-site">
+			<view class="address-site" @click="chooseCity()">
 				<image src="../../static/tab/addimg.svg" mode="widthFix"></image>
-				<text @click="chooseCity()">{{address}}</text>
+				<text>{{address}}</text>
 			</view>
 		</view>
 
@@ -351,13 +351,6 @@ export default {
 		}
 		
 	},
-	
-
-	// watch:{
-	// 	W_address_02(newData,oldData){
-	// 		this.address = newData
-	// 	}
-	// },
 	
 	
 };

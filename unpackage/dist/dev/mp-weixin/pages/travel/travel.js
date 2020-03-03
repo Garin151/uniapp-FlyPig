@@ -488,17 +488,7 @@ var SQL_UserData = db.collection("SQL-UserData");var _default =
   (0, _vuex.mapState)(["store_city_02"]), {
     valueChange_02: function valueChange_02() {
       this.address = this.store_city_02;
-    } })
-
-
-
-
-  // watch:{
-  // 	W_address_02(newData,oldData){
-  // 		this.address = newData
-  // 	}
-  // },
-};exports.default = _default;
+    } }) };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
