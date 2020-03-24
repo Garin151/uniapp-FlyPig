@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "cpn_modal": "/components/modal",
-    "h-mmessages": "/components/HM-messages"
-  }
-}

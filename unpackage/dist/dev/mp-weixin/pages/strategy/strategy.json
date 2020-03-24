@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "攻略",
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "cpn_address": "/pages/strategy/components/address",
-    "cpn_locality": "/pages/strategy/components/locality",
-    "cpn_contents": "/pages/strategy/components/contents"
-  }
-}

@@ -255,6 +255,7 @@ export default {
 		
 		upImage() {
 			let upFile_ID = []
+			let okArray = []
 			//console.log("开始上传图片")
 			return new Promise((resolve,reject) =>{
 				this.topimg.forEach((img) =>{
@@ -263,14 +264,15 @@ export default {
 					let imgion = img.lastIndexOf(".")
 					let eximg = img.slice(imgion)
 					let cloudpath = `${Date.now()}-${Math.floor(Math.random(0,1) * 10000000)}${eximg}`
+					upFile_ID.push("cloud://test-01-nkmqa.7465-test-01-nkmqa-1300405154/"+"static/" + cloudpath)
 					wx.cloud.uploadFile({
 						cloudPath:"static/" + cloudpath,
 						filePath:img
 					}).then(res =>{
 						//console.log(res)
-						upFile_ID.push(res.fileID)
 						//避免resolve的异步，返回不正确的数据
-						if(upFile_ID.length == this.topimg.length){
+						okArray.push(res.fileID)
+						if(okArray.length == this.topimg.length){
 							resolve(upFile_ID)
 						}
 						//console.log("上传图片成功")

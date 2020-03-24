@@ -1,1 +1,0 @@
-<view><view class="ticket"><block wx:for="{{tickets}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><view><image class="ticket-img" src="{{item.image}}" mode="widthFix"></image><text class="ticket-text">{{item.name}}</text></view></block></block></view></view>
