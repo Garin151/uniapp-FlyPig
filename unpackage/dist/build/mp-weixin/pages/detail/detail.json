@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "cpn_navs": "/pages/detail/components/navs",
+    "cpn_banner": "/pages/detail/components/banner",
+    "cpn_matter": "/pages/detail/components/matter",
+    "cpn_message": "/pages/detail/components/message"
+  }
+}
