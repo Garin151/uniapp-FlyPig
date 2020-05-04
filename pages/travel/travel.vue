@@ -16,7 +16,7 @@
 			</view>
 			<!-- 描述 -->
 			<view class="travels-describe">
-				<textarea placeholder="描述下你的旅行心得,帮助更多旅行的人" v-model="tipsdata" />
+				<textarea show-confirm-bar="false" placeholder="描述下你的旅行心得,帮助更多旅行的人" v-model="tipsdata" />
 			</view>
 		</view>
 
@@ -66,7 +66,7 @@
 		<!-- 登录模态框 -->
 		<cpn_modal ref="mon"></cpn_modal>
 		<!-- 提示用户上传成功与否 -->
-		<view class="warp" v-if="relend">
+		<view class="warp" v-if="relend" catchtouchmove="true">
 			<view class="warp-view tipmin">
 				<text>{{ reldata }}</text>
 			</view>
@@ -256,39 +256,45 @@ export default {
 		upImage() {
 			let upFile_ID = []
 			let okArray = []
-			//console.log("开始上传图片")
+			console.log("开始上传图片")
 			return new Promise((resolve,reject) =>{
-				this.topimg.forEach((img) =>{
-					//console.log(img)
-					//拼接上传的名字字符串
-					let imgion = img.lastIndexOf(".")
-					let eximg = img.slice(imgion)
-					let cloudpath = `${Date.now()}-${Math.floor(Math.random(0,1) * 10000000)}${eximg}`
-					upFile_ID.push("cloud://test-01-nkmqa.7465-test-01-nkmqa-1300405154/"+"static/" + cloudpath)
-					wx.cloud.uploadFile({
-						cloudPath:"static/" + cloudpath,
-						filePath:img
-					}).then(res =>{
-						//console.log(res)
-						//避免resolve的异步，返回不正确的数据
-						okArray.push(res.fileID)
-						if(okArray.length == this.topimg.length){
-							resolve(upFile_ID)
-						}
-						//console.log("上传图片成功")
-					}).catch(err =>{
-						console.log(err)
+				if(this.topimg.length == 0){
+					//判断用户是否要上传图片
+					console.log("用户不上传图片")
+					resolve("")
+				}else{
+					this.topimg.forEach((img) =>{
+						//console.log(img)
+						//拼接上传的名字字符串
+						let imgion = img.lastIndexOf(".")
+						let eximg = img.slice(imgion)
+						let cloudpath = `${Date.now()}-${Math.floor(Math.random(0,1) * 10000000)}${eximg}`
+						upFile_ID.push("cloud://test-01-nkmqa.7465-test-01-nkmqa-1300405154/"+"static/" + cloudpath)
+						wx.cloud.uploadFile({
+							cloudPath:"static/" + cloudpath,
+							filePath:img
+						}).then(res =>{
+							//console.log(res)
+							//避免resolve的异步，返回不正确的数据
+							okArray.push(res.fileID)
+							if(okArray.length == this.topimg.length){
+								resolve(upFile_ID)
+							}
+							console.log("上传图片成功")
+						}).catch(err =>{
+							console.log(err)
+						})
 					})
-				})
+				}
 			})
 		},
 		
 		upVideo() {
-			//console.log("开始上传视频")
+			console.log("开始上传视频")
 			return new Promise((resolve,reject) =>{
 				//判断用户是否要上传视频
 				if(this.videos == ""){
-					//console.log("用户不上传视频")
+					console.log("用户不上传视频")
 					resolve("")
 				}else{
 					let videoion = this.videos.lastIndexOf(".")
@@ -299,7 +305,7 @@ export default {
 						filePath: this.videos
 					}).then(res =>{
 						resolve(res.fileID)
-						//console.log("上传视频成功")
+						console.log("上传视频成功")
 					}).catch(err =>{
 						console.log(err)
 					})
@@ -308,7 +314,7 @@ export default {
 		},
 		
 		upLoadText(finalImage,finalVideo) {
-			//console.log("开始上传数据库")
+			console.log("开始上传数据库")
 			let datas = {
 				chooseTab:this.chooseTab,
 				titledata:this.titledata,
@@ -324,7 +330,7 @@ export default {
 			SQL_UserData.add({
 				data:datas
 			}).then(res =>{
-				//console.log("上传数据库成功")
+				console.log("上传数据库成功")
 				//console.log(res)
 				this.reldata = "发布成功!"
 				setTimeout(() =>{

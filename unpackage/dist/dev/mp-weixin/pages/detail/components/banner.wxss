@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 轮播 */
+.imageurl{width: 100%; height: 500rpx !important;}
+swiper{height: 500rpx !important;}
+.banner-num{background: #333333; width: 100rpx; color: #ffffff; text-align: center;
+border-radius: 15rpx;
+font-size: 25rpx;
+height: 40rpx;
+line-height: 40rpx;
+position: absolute;
+right: 20rpx;
+bottom: 20rpx;}
+.banner-posi{position: relative; height: 500rpx;}
+/* 标题 */
+.cont-back{padding: 20rpx; background: #FFFFFF;}
+.title-con{color: #333333; font-size: 35rpx; font-weight: bold; line-height: 1.5;
+ padding-bottom: 30rpx;}
+/* 销量之类 */
+.volume{font-size: 25rpx; color: #999999;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex; -webkit-box-pack:justify; -webkit-justify-content:space-between; justify-content:space-between;}
+.volume text{display: block;}
+

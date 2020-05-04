@@ -1,0 +1,14 @@
+
+.nonedata.data-v-171ac3c8 {
+	text-align: center;
+}
+.nonedata image.data-v-171ac3c8 {
+	width: 200rpx;
+	height: 200rpx;
+}
+.nonedata text.data-v-171ac3c8 {
+	display: block;
+	font-size: 30rpx;
+	color: rgb(153,153,153);
+}
+
