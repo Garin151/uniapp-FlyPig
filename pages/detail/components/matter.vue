@@ -4,7 +4,9 @@
 			<view class="cont-introduce cont-back">
 				<view class="img-video">图片视频介绍</view>
 				<view>
-					<video objectFit="fill" :src="videoData" enable-play-gesture="true" v-if="videoShow"></video>
+					<view class="uploadvideo">
+						<video objectFit="cover" :src="videoData" enable-play-gesture="true" v-if="videoShow"></video>
+					</view>
 					<view>
 						<block v-for="(item,index) in imgArray" :key="index">
 							<image :src="item" mode="widthFix"></image>
@@ -45,6 +47,17 @@ export default {
 </script>
 
 <style scoped>
+	/* 视频 */
+	.uploadvideo video {
+		width: 100%;
+		height: 400upx;
+		border-radius: 5upx;
+	}
+	.uploadvideo {
+		margin: 0 8px;
+		border-radius: 5upx;
+		position: relative;
+	}
 /* 图文视频 */
 	.cont-back{padding: 20upx; background: #FFFFFF;}
 	.cont-introduce{margin-top: 20upx;}
