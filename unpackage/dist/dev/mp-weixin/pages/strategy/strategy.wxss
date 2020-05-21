@@ -2,7 +2,8 @@
 .fabBtn image{
 	width: 120rpx !important;
 	height: 100rpx !important;
-	border-radius: 30rpx;
+	-webkit-border-radius: 30rpx;
+	        border-radius: 30rpx;
 }
 .fabBtn {
 	position: fixed;

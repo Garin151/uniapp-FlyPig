@@ -15,7 +15,8 @@
 	color: inherit;
 	border: 7rpx solid greenyellow;
 	border-bottom-color: transparent;
-	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
 	-webkit-animation: 1s loader-data-v-a0d4ebf0 linear infinite;
 	        animation: 1s loader-data-v-a0d4ebf0 linear infinite;
 }

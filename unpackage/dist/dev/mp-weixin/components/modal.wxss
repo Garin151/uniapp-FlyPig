@@ -74,7 +74,8 @@
 		left: 0;
 		bottom: 0;
 		right: 0;
-		border-radius: 8rpx;
+		-webkit-border-radius: 8rpx;
+		        border-radius: 8rpx;
 		overflow: hidden;
 }
 .warp-text.data-v-1dd8000e {

@@ -41,9 +41,12 @@
 	-webkit-flex-direction: flex;
 	        flex-direction: flex;
 	background: #fff7d4;
-	border-top-left-radius: 50rpx;
-	border-bottom-left-radius: 50rpx;
-	border-bottom-right-radius: 50rpx;
+	-webkit-border-top-left-radius: 50rpx;
+	        border-top-left-radius: 50rpx;
+	-webkit-border-bottom-left-radius: 50rpx;
+	        border-bottom-left-radius: 50rpx;
+	-webkit-border-bottom-right-radius: 50rpx;
+	        border-bottom-right-radius: 50rpx;
 }
 .search-input {
 	height: 70rpx;

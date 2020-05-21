@@ -44,7 +44,8 @@
 	width: 100% !important;
 	height: 100% !important;
 	object-fit: cover;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
 .active-name.data-v-1e38f107 {
 	font-size: 32rpx;
@@ -86,7 +87,8 @@
 .purchase-userinfo image.data-v-1e38f107{
 	width: 50rpx;
 	height: 50rpx;
-	border-radius: 50rpx;
+	-webkit-border-radius: 50rpx;
+	        border-radius: 50rpx;
 }
 .purchase-userinfo text.data-v-1e38f107{
 	padding-left: 20rpx;

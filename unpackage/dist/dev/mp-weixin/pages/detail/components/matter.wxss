@@ -45,7 +45,22 @@
 
 
 
-/* 图文视频 */
+
+
+	/* 视频 */
+.uploadvideo video.data-v-f9d38a68 {
+		width: 100%;
+		height: 400rpx;
+		-webkit-border-radius: 5rpx;
+		        border-radius: 5rpx;
+}
+.uploadvideo.data-v-f9d38a68 {
+		margin: 0 8px;
+		-webkit-border-radius: 5rpx;
+		        border-radius: 5rpx;
+		position: relative;
+}
+	/* 图文视频 */
 .cont-back.data-v-f9d38a68{padding: 20rpx; background: #FFFFFF;}
 .cont-introduce.data-v-f9d38a68{margin-top: 20rpx;}
 .img-video.data-v-f9d38a68{color: #333333; font-size: 30rpx; font-weight: bold; padding: 20rpx 0;}

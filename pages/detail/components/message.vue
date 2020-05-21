@@ -22,7 +22,7 @@
 						</view>
 					</view>	
 					<view class="cont-name-text">
-						<text>{{item.usermess}}</text>
+						<text :selectable="true" space="ensp" class="ttt">{{item.usermess}}</text>
 					</view>
 				</view>
 			</block>
@@ -36,7 +36,7 @@
 		<!-- 评论框 -->
 		<view class="Comment-box" v-if="box" :catchtouchmove="true">
 			<view class="Comment-text">
-				<textarea  placeholder="写下你对这篇游记的评价"  show-confirm-bar="false" focus="true" v-model="Comment"/>
+				<textarea  placeholder="写下你对这篇游记的评价"  :show-confirm-bar="false" focus="true" v-model="Comment"/>
 			</view>
 			<!-- 发表按钮 -->
 			<view class="published">
@@ -206,10 +206,14 @@ export default {
 	 .cont-name text{font-size: 30upx; color: #a8a8a8;}
 	 .cont-name{display: flex; align-items: center; height: 50upx;}
 	 .cont-name-text text{font-size: 27upx; color: #333333; line-height: 1.5;
-	 display: -webkit-box;
-	 -webkit-box-orient: vertical;
-	 -webkit-line-clamp: 2;
-	 overflow: hidden;}
+		width: 100%;
+		text-overflow: ellipsis;
+		white-space: normal;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 5;
+		-webkit-box-orient: vertical;
+	 }
 	 .message-dist{margin-bottom: 30upx; border-bottom: 1rpx solid #f8f8f8;
 	 padding-bottom: 25upx;}
 	 /* 评论按钮 */

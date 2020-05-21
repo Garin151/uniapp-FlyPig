@@ -44,7 +44,8 @@
 	width: 100% !important;
 	height: 100% !important;
 	object-fit: cover;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
 .active-name.data-v-23a5ee7c {
 	font-size: 32rpx;

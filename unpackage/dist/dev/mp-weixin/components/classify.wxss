@@ -9,7 +9,8 @@
 	-webkit-flex-wrap: wrap;
 	overflow: hidden;
 	border: 1rpx solid #eeeeee;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
 .conteng view {
 	width: 25%;

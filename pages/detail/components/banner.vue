@@ -22,7 +22,7 @@
 			
 				<!-- 标题 -->
 				<view class="cont-back">
-					<view class="title-con">{{detailData}}</view>
+					<text class="title-con" space="ensp" :selectable="true">{{detailData}}</text>
 					<!-- 销量之类 -->
 					<view class="volume">
 						<text>5分 超出预期</text>
@@ -93,7 +93,7 @@ export default {
 		/* 标题 */
 		.cont-back{padding: 20upx; background: #FFFFFF;}
 		.title-con{color: #333333; font-size: 35upx; font-weight: bold; line-height: 1.5;
-		 padding-bottom: 30upx;}
+		 padding-bottom: 30upx;max-width: 100%;}
 		 /* 销量之类 */
 		 .volume{font-size: 25upx; color: #999999;
 				display: flex; justify-content:space-between;}

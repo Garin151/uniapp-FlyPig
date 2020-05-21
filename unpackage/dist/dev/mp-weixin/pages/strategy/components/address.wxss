@@ -50,7 +50,8 @@
 /* 机票 */
 .Plane image {
 	width: 100%;
-	border-radius: 20rpx;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
 	height: 150rpx;
 }
 .Plane {

@@ -18,7 +18,8 @@ page.data-v-1f9105e2 {
 	-webkit-flex-direction: row;
 	        flex-direction: row;
 	background: #f8f8f8;
-	border-radius: 50rpx;
+	-webkit-border-radius: 50rpx;
+	        border-radius: 50rpx;
 }
 .search-img.data-v-1f9105e2 {
 	margin: auto 0 auto 20rpx;
@@ -86,7 +87,8 @@ page.data-v-1f9105e2 {
 	background: #f7f7f7;
 	padding: 20rpx 10rpx;
 	margin: 0 20rpx;
-	border-radius: 6rpx;
+	-webkit-border-radius: 6rpx;
+	        border-radius: 6rpx;
 }
 /* 热门城市 */
 .hot-city.data-v-1f9105e2 {
@@ -96,7 +98,8 @@ page.data-v-1f9105e2 {
 }
 .menu-block view.data-v-1f9105e2 {
 	background: #f7f7f7;
-	border-radius: 6rpx;
+	-webkit-border-radius: 6rpx;
+	        border-radius: 6rpx;
 	font-size: 27rpx;
 	color: #333333;
 	text-align: center;

@@ -16,7 +16,7 @@
 			</view>
 			<!-- 描述 -->
 			<view class="travels-describe">
-				<textarea show-confirm-bar="false" placeholder="描述下你的旅行心得,帮助更多旅行的人" v-model="tipsdata" />
+				<textarea :show-confirm-bar="false" placeholder="描述下你的旅行心得,帮助更多旅行的人" v-model="tipsdata" />
 			</view>
 		</view>
 

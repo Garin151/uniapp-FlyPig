@@ -9,7 +9,8 @@
 .menu-block view {
 	background: #ffffff;
 	border: 1px solid #c2c5cc;
-	border-radius: 6rpx;
+	-webkit-border-radius: 6rpx;
+	        border-radius: 6rpx;
 	font-size: 25rpx;
 	color: #292c33;
 	font-weight: bold;

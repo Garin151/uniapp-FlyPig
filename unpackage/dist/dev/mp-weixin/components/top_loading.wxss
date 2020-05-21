@@ -3,7 +3,8 @@
 	width: 200rpx;
 	height: 200rpx;
 	background: rgba(0,0,0,0.2);
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
 .home-load.data-v-7fae181e {
 	display: -webkit-box;
